@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>test</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+        body{
+            background-color: black;
+        }
+        .planet{
+            width: 800px;
+            height: 600px;
+            background-color: black;
+            position: relative;
+            border: 1px solid white;
+        }
+        .planet div{
+            position: absolute;
+        }
+        .sun{
+            left: 350px;
+            top: 250px;
+            width: 100px;
+            height: 100px;
+            background: url(http://images2015.cnblogs.com/blog/818663/201510/818663-20151013205656257-1729257972.png) 0 0 no-repeat;
+        }
+        .earth{
+            top: 200px;
+            left: 370px;
+            width: 60px;
+            height: 60px;
+            background: url(http://images2015.cnblogs.com/blog/818663/201510/818663-20151013205943538-1279197333.png) 0 0 no-repeat;
+            transform-origin: 30px 200px;
+
+             animation: rotation 8s linear infinite; 
+
+        }
+        .moveY{
+            animation: moveY 4s ease-in-out infinite alternate;
+        }
+        @keyframes moveY{
+            to{
+                transform: translateY(-200px);
+            }
+        }
+        @keyframes rotation{
+            to{
+                transform: rotate(1turn);
+            }
+        }
+        .track{
+            width: 340px;
+            height: 140px;
+            left: 230px;
+            top: 230px;
+            border: 1px solid darkgrey;
+            border-radius: 50%;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="planet">
+            <div class="sun"></div>
+            <div class="track"></div>
+            <div class="moveY">
+                <div class="earth"></div>
+            </div>
+        </div>
+    </body>
+</html>

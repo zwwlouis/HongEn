@@ -1,0 +1,161 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+html {
+    font-size: 50px;
+}
+
+.back {
+    width: 7.5rem;
+    height: 100vh;
+    position: relative;
+    background: url('./img/back.png') 0 0 no-repeat;
+    background-size: cover;
+}
+
+/* .track {
+    position: absolute;
+    top: calc(50% - 35px);
+    left: calc(50% - 110px);
+    width: 220px;
+    height: 70px;
+    border: 0.01rem solid black;
+    border-radius: 50%;
+    font-size: 0.4rem;
+    line-height: 1.4rem;
+    color: #fff;
+    text-align: center;
+} */
+
+ .track {
+    position: absolute;
+    top: calc(50% - 0.7rem);
+    left: calc(50% - 1.1rem);
+    width: 2.2rem;
+    height: 1.4rem;
+    border: 0.01rem solid black;
+    border-radius: 50%;
+    font-size: 0.4rem;
+    line-height: 1.4rem;
+    color: #fff;
+    text-align: center;
+} 
+
+
+/* 小蓝球 */
+
+.move_blue_y {
+    position: absolute;
+    animation: moveBlueY 4s ease-in-out infinite alternate;
+}
+
+@keyframes moveBlueY {
+    to {
+        transform: translateY(0.8rem);
+    }
+}
+
+.blueBall {
+    position: absolute;
+    width: 0.24rem;
+    height: 0.24rem;
+    background: url('./img/blue_ball.png') 0 0 no-repeat;
+    background-size: cover;
+    top: calc(50vh - 0.12rem + 0.7rem);
+    left: calc(50vw - 0.12rem);
+    transform-origin: 0.12rem -0.96rem;
+    animation: blueball 8s linear infinite;
+}
+
+@keyframes blueball {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+
+/* 小黄球 */
+
+/* .yellowBall {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: url('./img/yellow_ball.png') 0 0 no-repeat;
+    background-size: cover;
+    top: calc(50vh - 9px - 35px);
+    left: calc(50vw - 9px);
+    transform-origin: 9px 128px;
+    animation: yellowball 8s linear infinite;
+}
+
+@keyframes yellowball {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.move_yellow_y {
+    position: absolute;
+    animation: moveYellowY 4s ease-in-out infinite alternate;
+}
+
+@keyframes moveYellowY {
+    to {
+        transform: translateY(-150px);
+    }
+} */
+
+
+/* 小黄球 */
+
+
+.yellowBall {
+    position: absolute;
+    width:0.36rem;
+    height: 0.36rem;
+    background: url('./img/yellow_ball.png') 0 0 no-repeat;
+    background-size: cover;
+    top: calc(50vh - 0.18rem - 0.7rem);
+    left: calc(50vw - 0.18rem);
+
+    transform-origin: 0.18rem 1.28rem;
+    animation: yellowball 8s linear infinite;  
+}
+@keyframes yellowball {
+    to{
+        transform: rotate(1turn);
+    }
+}
+
+.move_yellow_y {
+    position: absolute;
+     animation: moveYellowY 4s ease-in-out infinite alternate;  
+}
+
+@keyframes moveYellowY {
+    to{
+        transform: translateY(-0.8rem);
+    }
+} 
+ 
+
+
+/* 文字描述部分 */
+
+.description {
+    display: none;
+    position: absolute;
+    color: #fff;
+    font-family: "华文仿宋";
+    top: calc(50vh + 1.8rem);
+    left: calc(50vw - 1.8rem);
+    line-height: 0.5rem;
+    font-size: 0.36rem;
+}
+
+.description div {
+    text-align: center;
+}

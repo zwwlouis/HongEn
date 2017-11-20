@@ -1,0 +1,76 @@
+.stage {
+    /* background-color: rgba(0, 0, 0, 0.3);
+    height: 400px;
+    position: relative; */
+    width: 7.5rem;
+    height: 100vh;
+    position: relative;
+    background: url('./img/HongEnWordBackV3.png') 0 0 no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+#container {
+    height: 100%;
+    /* width: 50%;  */
+    transform-style: preserve-3d;
+    /* perspective: 8rem;  */
+    perspective: 10rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+div.word {
+    position: absolute;
+    /* width: 4.04rem !important;
+    height: 3.99rem !important; */
+    /* margin: 0; */
+}
+.num1 {
+    width: 4.04rem;
+    height: 3.99rem;
+    background-color: rgba(0, 0, 0, 0);
+    background: url('./img/ball1.png') 0 0 no-repeat;
+    background-size: cover;
+}
+.num2 {
+    width:2.2rem;
+    height: 3.48rem;
+    background-color: rgba(0, 0, 0, 0);
+    background: url('./img/ball2.png') 0 0 no-repeat;
+    background-size: cover;
+}
+.num3 {
+    width: 2.77rem;
+    height: 2.98rem;
+    background-color: rgba(0, 0, 0, 0);
+    background: url('./img/ball3.png') 0 0 no-repeat;
+    background-size: cover;
+}
+.num4 {
+    width: 2.5rem;
+    height: 2.36rem;
+    background-color: rgba(0, 0, 0, 0);
+    background: url('./img/ball4.png') 0 0 no-repeat;
+    background-size: cover;
+}
+.num5 {
+    width: 2.65rem;
+    height: 3.35rem;
+    background-color: rgba(0, 0, 0, 0);
+    background: url('./img/ball5.png') 0 0 no-repeat;
+    background-size: cover;
+}
+.num6 {
+    width: 3.3rem;
+    height: 3.06rem;
+    background-color: rgba(0, 0, 0, 0);
+    background: url('./img/ball6.png') 0 0 no-repeat;
+    background-size: cover;
+}
+.num7 {
+    width: 3.09rem;
+    height: 3.38rem;
+    background-color: rgba(0, 0, 0, 0);
+    background: url('./img/ball7.png') 0 0 no-repeat;
+    background-size: cover;
+}
